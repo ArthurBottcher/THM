@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron ."
-  }, 
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/ArthurBottcher/THM.git"
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/ArthurBottcher/THM/issues"
   },
-  "homepage": "https://github.com/ArthurBottcher/THM#readme"
+  "homepage": "https://github.com/ArthurBottcher/THM#readme",
+  "devDependencies": {
+    "electron": "^6.0.7"
+  }
 }
