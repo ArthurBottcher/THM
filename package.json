@@ -1,0 +1,25 @@
+{
+  "name": "thm",
+  "version": "1.0.0",
+  "description": "Temperature and humidity measurement of a Bluetooth Arduino device.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  }, 
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ArthurBottcher/THM.git"
+  },
+  "keywords": [
+    "temperature",
+    "humidity",
+    "measurement",
+    "bluetooth"
+  ],
+  "author": "ArthurBotcher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArthurBottcher/THM/issues"
+  },
+  "homepage": "https://github.com/ArthurBottcher/THM#readme"
+}
