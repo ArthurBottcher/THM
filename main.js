@@ -1,17 +1,19 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow } = require("electron");
 
-function createWindow () {
+function createWindow() {
   // Cria uma janela de navegação.
   let win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1300,
+    height: 760,
+    darkTheme: true,
+    titleBarStyle: "default",
     webPreferences: {
       nodeIntegration: true
     }
-  })
+  });
 
   // e carregar o index.html do aplicativo.
-  win.loadFile('index.html')
+  win.loadFile("index.html");
 }
 
-app.on('ready', createWindow)
+app.on("ready", createWindow);

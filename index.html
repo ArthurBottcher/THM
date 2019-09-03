@@ -1,20 +1,63 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
-    <title>Olá Mundo!</title>
+    <body id="container">
+      <body id="topo">
+        <input id="modeloInput" type="text" name="fname" placeholder="Modelo" />
+        <input id="dataInput" type="text" name="fname" placeholder="Data" />
+        <input
+          id="calcadoInput"
+          type="text"
+          name="fname"
+          placeholder="Calçado"
+        />
+      </body>
+
+      <body id="buttons">
+        <input id="conectarBtn" type="button" value="Conectar" />
+        <input id="gravarBtn" type="button" value="Gravar" />
+        <input id="pararBtn" type="button" value="Parar" />
+      </body>
+
+      <body id="terminal">
+        <p>TEstE</p>
+      </body>
+
+      <body id="results">
+        <body id="TempIni">
+          <p id="textIndices">Temp. Inicial</p>
+          <input type="text" name="textResultTemp" id="textResultTemp" />
+        </body>
+
+        <body id="TempFin">
+          <p id="textIndices">Temp. Final</p>
+          <input type="text" name="textResultTemp" id="textResultTemp" />
+        </body>
+
+        <body id="DifTemp">
+          <p id="textIndices">Delta Temp.</p>
+          <p id="textResultTemp">variavel</p>
+        </body>
+      </body>
+
+      <body id="results">
+        <body id="UmidIni">
+          <p id="textIndices">Umid. Inicial</p>
+          <input type="text" name="textResultUmid" id="textResultUmid" />
+        </body>
+
+        <body id="UmidFin">
+          <p id="textIndices">Umid. Final</p>
+          <input type="text" name="textResultUmid" id="textResultUmid" />
+        </body>
+
+        <body id="DifUmid">
+          <p id="textIndices">Delta Umid.</p>
+          <p id="textResultUmid">variavel</p>
+        </body>
+      </body>
+    </body>
   </head>
-  <body>
-    <h1>Olá Mundo!</h1>
-    Nos estamos usando node
-    <script>
-      document.write(process.versions.node);</script
-    >, Chrome
-    <script>
-      document.write(process.versions.chrome);</script
-    >, e Electron
-    <script>
-      document.write(process.versions.electron);</script
-    >.
-  </body>
 </html>
