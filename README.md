@@ -3,3 +3,6 @@
 ## Description
 
 ## Installation
+
+##Licença
+  MIT
