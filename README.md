@@ -4,6 +4,6 @@
 
 ## Installation
 
-##Licença
+## Licence
 
 MIT

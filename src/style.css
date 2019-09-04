@@ -1,7 +1,20 @@
 #container {
+  margin: 0px;
   flex: 1;
-  background-color: #282a36;
+  background-color: #23242e;
   color: #fff;
+}
+header {
+  background-color: #282a36;
+  height: 80px;
+  margin: 0;
+  padding-top: 25px;
+  font-size: 30pt;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  color: #50fa7b;
 }
 
 #topo {
@@ -11,7 +24,9 @@
 }
 
 #modeloInput {
-  background-color: none;
+  background-color: #23242e;
+  border: none;
+  outline: none;
   height: 60px;
   text-align: center;
   width: 50%;
@@ -20,7 +35,9 @@
   color: #fff;
 }
 #dataInput {
-  background-color: none;
+  background-color: #23242e;
+  border: none;
+  outline: none;
   height: 60px;
   text-align: center;
   width: 50%;
@@ -30,7 +47,9 @@
 }
 
 #calcadoInput {
-  background-color: none;
+  background-color: #23242e;
+  border: none;
+  outline: none;
   align-self: center;
   height: 60px;
   text-align: center;
@@ -41,6 +60,7 @@
 }
 
 #buttons {
+  justify-content: center;
   display: flex;
   flex-direction: row;
   align-self: center;
@@ -51,6 +71,9 @@
   background-color: #50fa7b;
   margin: 20px;
   width: 20%;
+  height: 60px;
+  border: none;
+  outline: none;
   border-radius: 50px;
   text-align: center;
   font-size: 25pt;
@@ -62,6 +85,9 @@
   background-color: #50fa7b;
   margin: 20px;
   width: 20%;
+  height: 60px;
+  border: none;
+  outline: none;
   border-radius: 50px;
   font-size: 25pt;
   font-weight: bold;
@@ -72,88 +98,101 @@
   background-color: #00bfff;
   margin: 20px;
   width: 20%;
+  height: 60px;
+  border: none;
+  outline: none;
   border-radius: 50px;
   font-size: 25pt;
   font-weight: bold;
 }
 
 #terminal {
-  background-color: red;
+  background-color: #282a36;
   margin: 20px;
-  padding: 10px;
-  height: 35%;
+  padding: 20px;
+  height: 200px;
+  font-size: 15pt;
+  font-weight: bold;
   border-radius: 25px;
 }
 
 #results {
+  font-size: 25pt;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 45px;
-  margin: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
   height: 15%;
 }
 
 #textIndices {
-  font-size: 20;
-  margin-bottom: 5;
   color: #fff;
+  margin-bottom: 0px;
 }
 
 #textResultTemp {
-  font-size: 40;
+  background-color: #282a36;
+  border: none;
+  outline: none;
+  text-align: center;
   color: #f00;
-  height: 20px;
-  width: 80px;
+  height: 40px;
+  width: 150px;
+}
+
+p#textResultTemp {
+  margin-top: 5px;
+  padding: 0;
 }
 
 #textResultUmid {
-  font-size: 40;
+  background-color: #282a36;
+  border: none;
+  outline: none;
+  text-align: center;
   color: #00f;
-  height: 20px;
-  width: 80px;
+  height: 40px;
+  width: 150px;
+}
+p#textResultUmid {
+  margin-top: 5px;
+  padding: 0;
 }
 
 #TempIni {
   flex-direction: column;
-  margin: 20;
-  margin-bottom: 10;
   width: 33%;
+  padding: 0;
 }
 
 #UmidIni {
   flex-direction: column;
-  margin: 20;
-  margin-bottom: 10;
   width: 33%;
+  padding: 0;
 }
 
 #TempFin {
   flex-direction: column;
-  margin: 20;
-  margin-bottom: 10;
   width: 33%;
+  padding: 0;
 }
 
 #UmidFin {
   flex-direction: column;
-  margin: 20;
-  margin-bottom: 10;
   width: 33%;
+  padding: 0;
 }
 
 #DifTemp {
   flex-direction: column;
-  margin: 20;
-  margin-bottom: 10;
   width: 33%;
+  padding: 0;
 }
 
 #DifUmid {
   flex-direction: column;
-  margin: 20;
-  margin-bottom: 10;
   width: 33%;
+  padding: 0;
 }
