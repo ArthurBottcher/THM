@@ -1,54 +1,47 @@
-* {
-  display: flexbox;
-  justify-content: center;
-}
-
 #container {
   flex: 1;
   background-color: #282a36;
   color: #fff;
-  flex-direction: column;
-  justify-content: center;
 }
 
 #topo {
-  flex-wrap: wrap;
-  margin-top: 60px;
+  display: flex;
+  margin-top: 20px;
   flex-direction: row;
 }
 
 #modeloInput {
-  background-color: #ffb86c;
+  background-color: none;
   height: 60px;
   text-align: center;
-  width: 30%;
+  width: 50%;
   font-size: 30pt;
   margin: 5px;
   color: #fff;
 }
 #dataInput {
-  background-color: #ffb86c;
+  background-color: none;
   height: 60px;
   text-align: center;
-  width: 30%;
+  width: 50%;
   font-size: 30pt;
   margin: 5px;
   color: #fff;
 }
 
 #calcadoInput {
-  background-color: #ffb86c;
-  flex-direction: column;
+  background-color: none;
   align-self: center;
   height: 60px;
   text-align: center;
-  width: 30%;
+  width: 50%;
   font-size: 30pt;
   margin: 5px;
   color: #fff;
 }
 
 #buttons {
+  display: flex;
   flex-direction: row;
   align-self: center;
 }
@@ -59,6 +52,7 @@
   margin: 20px;
   width: 20%;
   border-radius: 50px;
+  text-align: center;
   font-size: 25pt;
   font-weight: bold;
 }
@@ -82,10 +76,12 @@
   font-size: 25pt;
   font-weight: bold;
 }
+
 #terminal {
   background-color: red;
   margin: 20px;
-  height: 400px;
+  padding: 10px;
+  height: 35%;
   border-radius: 25px;
 }
 
@@ -121,7 +117,6 @@
 }
 
 #TempIni {
-  display: flex;
   flex-direction: column;
   margin: 20;
   margin-bottom: 10;
@@ -129,7 +124,6 @@
 }
 
 #UmidIni {
-  display: flex;
   flex-direction: column;
   margin: 20;
   margin-bottom: 10;
@@ -137,7 +131,6 @@
 }
 
 #TempFin {
-  display: flex;
   flex-direction: column;
   margin: 20;
   margin-bottom: 10;
@@ -145,7 +138,6 @@
 }
 
 #UmidFin {
-  display: flex;
   flex-direction: column;
   margin: 20;
   margin-bottom: 10;
@@ -153,7 +145,6 @@
 }
 
 #DifTemp {
-  display: flex;
   flex-direction: column;
   margin: 20;
   margin-bottom: 10;
@@ -161,7 +152,6 @@
 }
 
 #DifUmid {
-  display: flex;
   flex-direction: column;
   margin: 20;
   margin-bottom: 10;

@@ -5,15 +5,13 @@ function createWindow() {
   let win = new BrowserWindow({
     width: 1300,
     height: 760,
-    darkTheme: true,
-    titleBarStyle: "default",
     webPreferences: {
       nodeIntegration: true
     }
   });
 
   // e carregar o index.html do aplicativo.
-  win.loadFile("index.html");
+  win.loadFile("./src/index.html");
 }
 
 app.on("ready", createWindow);
