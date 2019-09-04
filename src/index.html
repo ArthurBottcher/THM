@@ -6,7 +6,7 @@
   </head>
 
   <body>
-    <div id="container">
+    <div id="container" onload="calculo()">
       <header>IBTeC</header>
       <div id="topo">
         <input id="modeloInput" type="text" name="fname" placeholder="Modelo" />
@@ -26,42 +26,43 @@
       </div>
 
       <div id="terminal">
-        <p>TEstE</p>
+        <p>Terminal serial</p>
       </div>
 
       <div id="results">
         <div id="TempIni">
           <p id="textIndices">Temp. Inicial</p>
-          <input type="text" name="textResultTemp" id="textResultTemp" />
+          <p id="textResultTempIni">0</p>
         </div>
 
         <div id="TempFin">
           <p id="textIndices">Temp. Final</p>
-          <input type="text" name="textResultTemp" id="textResultTemp" />
+          <p id="textResultTempFin">0</p>
         </div>
 
         <div id="DifTemp">
           <p id="textIndices">Delta Temp.</p>
-          <p id="textResultTemp">variavel</p>
+          <p id="textResultTempDelta">0</p>
         </div>
       </div>
 
       <div id="results">
         <div id="UmidIni">
           <p id="textIndices">Umid. Inicial</p>
-          <input type="text" name="textResultUmid" id="textResultUmid" />
+          <p id="textResultUmidIni">0</p>
         </div>
 
         <div id="UmidFin">
           <p id="textIndices">Umid. Final</p>
-          <input type="text" name="textResultUmid" id="textResultUmid" />
+          <p id="textResultUmidFin">0</p>
         </div>
 
         <div id="DifUmid">
           <p id="textIndices">Delta Umid.</p>
-          <p id="textResultUmid">variavel</p>
+          <p id="textResultUmidDelta">0</p>
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

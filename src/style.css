@@ -132,8 +132,9 @@ header {
   margin-bottom: 0px;
 }
 
-#textResultTemp {
-  background-color: #282a36;
+#textResultTempIni,
+#textResultTempFin,
+#textResultTempDelta {
   border: none;
   outline: none;
   text-align: center;
@@ -147,8 +148,9 @@ p#textResultTemp {
   padding: 0;
 }
 
-#textResultUmid {
-  background-color: #282a36;
+#textResultUmidIni,
+#textResultUmidFin,
+#textResultUmidDelta {
   border: none;
   outline: none;
   text-align: center;
