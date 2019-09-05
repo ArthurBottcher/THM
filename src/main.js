@@ -10,9 +10,8 @@ function createWindow() {
       nodeIntegration: true
     }
   });
-
+  win.webContents.openDevTools();
   win.setMenuBarVisibility(false);
-
   // e carregar o index.html do aplicativo.
   win.loadFile("./src/index.html");
 }
