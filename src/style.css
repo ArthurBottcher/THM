@@ -3,6 +3,7 @@
   flex: 1;
   background-color: #23242e;
   color: #fff;
+  justify-content: center;
 }
 header {
   background-color: #282a36;
@@ -117,6 +118,7 @@ header {
 }
 
 #results {
+  margin-left: 20px;
   font-size: 25pt;
   display: flex;
   flex-direction: row;

@@ -1,15 +1,23 @@
 function calculo() {
-  let tempInicial = parseFloat(document.getElementById("textResultTempIni"));
-  let tempFinal = parseFloat(document.getElementById("textResultTempFin"));
-  let tempDelta = parseFloat(document.getElementById("textResultTempDelta"));
+  let tempInicial = document.getElementById("textResultTempIni");
+  let tempFinal = document.getElementById("textResultTempFin");
+  let tempDelta = document.getElementById("textResultTempDelta");
 
-  umidInicial = parseFloat(document.getElementById("texResultUmidIni"));
-  umidFinal = parseFloat(document.getElementById("textResultUmidFin"));
-  umidDelta = parseFloat(document.getElementById("textResultUmidDelta"));
+  let umidInicial = document.getElementById("textResultUmidIni");
+  let umidFinal = document.getElementById("textResultUmidFin");
+  let umidDelta = document.getElementById("textResultUmidDelta");
+
   let ti = 28;
-  tempInicial.innerHTML = `${ti}`;
+  tempInicial.innerHTML = ti;
   let tf = 31.0;
-  tempFinal.innerHTML - `${tf}`;
+  tempFinal.innerHTML = tf;
   delta = tf - ti;
-  tempDelta.innerHTML = `${delta}`;
+  tempDelta.innerHTML = delta;
+
+  let ui = 55;
+  let uf = 98;
+  umidInicial.innerHTML = ui;
+  umidFinal.innerHTML = uf;
+  deltau = uf - ui;
+  umidDelta.innerHTML = deltau;
 }

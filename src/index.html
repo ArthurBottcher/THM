@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>THM Temperature and Humidity Measurement</title>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
   </head>
 
   <body>
-    <div id="container" onload="calculo()">
+    <div id="container">
       <header>IBTeC</header>
       <div id="topo">
         <input id="modeloInput" type="text" name="fname" placeholder="Modelo" />
@@ -20,7 +21,7 @@
       </div>
 
       <div id="buttons">
-        <button id="conectarBtn">Conectar</button>
+        <button id="conectarBtn" onclick="calculo()">Conectar</button>
         <button id="gravarBtn">Gravar</button>
         <button id="pararBtn">Parar</button>
       </div>
@@ -32,37 +33,37 @@
       <div id="results">
         <div id="TempIni">
           <p id="textIndices">Temp. Inicial</p>
-          <p id="textResultTempIni">0</p>
+          <p id="textResultTempIni"></p>
         </div>
 
         <div id="TempFin">
           <p id="textIndices">Temp. Final</p>
-          <p id="textResultTempFin">0</p>
+          <p id="textResultTempFin"></p>
         </div>
 
         <div id="DifTemp">
           <p id="textIndices">Delta Temp.</p>
-          <p id="textResultTempDelta">0</p>
+          <p id="textResultTempDelta"></p>
         </div>
       </div>
 
       <div id="results">
         <div id="UmidIni">
           <p id="textIndices">Umid. Inicial</p>
-          <p id="textResultUmidIni">0</p>
+          <p id="textResultUmidIni"></p>
         </div>
 
         <div id="UmidFin">
           <p id="textIndices">Umid. Final</p>
-          <p id="textResultUmidFin">0</p>
+          <p id="textResultUmidFin"></p>
         </div>
 
         <div id="DifUmid">
           <p id="textIndices">Delta Umid.</p>
-          <p id="textResultUmidDelta">0</p>
+          <p id="textResultUmidDelta"></p>
         </div>
       </div>
     </div>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
