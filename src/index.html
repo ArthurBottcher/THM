@@ -6,28 +6,21 @@
     <meta charset="UTF-8" />
   </head>
 
-  <body onload="calculo()">
+  <body onload="start()">
     <div id="container">
-      <header>IBTeC</header>
+      <header>
+        IBTeC
+      </header>
       <div id="topo">
-        <input id="modeloInput" type="text" name="fname" placeholder="Modelo" />
-        <input id="dataInput" type="text" name="fname" placeholder="Data" />
-        <input
-          id="calcadoInput"
-          type="text"
-          name="fname"
-          placeholder="Calçado"
-        />
+        <input id="modeloInput" type="text" placeholder="Modelo" />
+        <input id="calcadoInput" type="text" placeholder="Calçado" />
+        <p id="dataInput"></p>
       </div>
 
       <div id="buttons">
         <button id="conectarBtn">Conectar</button>
         <button id="gravarBtn">Gravar</button>
         <button id="pararBtn">Parar</button>
-      </div>
-
-      <div id="terminal">
-        <p>Terminal serial</p>
       </div>
 
       <div id="results">
@@ -62,6 +55,10 @@
           <p id="textIndices">Delta Umid.</p>
           <p id="textResultUmidDelta"></p>
         </div>
+      </div>
+
+      <div id="terminal">
+        <p>Terminal serial</p>
       </div>
     </div>
     <script src="script.js"></script>

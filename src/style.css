@@ -1,3 +1,7 @@
+* {
+  font-family: "Arial Black";
+}
+
 #container {
   margin: 0px;
   flex: 1;
@@ -6,16 +10,15 @@
   justify-content: center;
 }
 header {
-  background-color: #282a36;
   height: 80px;
-  margin: 0;
+  margin: 0px;
   padding-top: 25px;
   font-size: 30pt;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Arial Black";
   font-weight: bold;
   text-align: center;
   line-height: 40px;
-  color: #50fa7b;
+  color: #e6e6e6;
 }
 
 #topo {
@@ -47,6 +50,10 @@ header {
   color: #fff;
 }
 
+#dataInput p {
+  text-align: center;
+}
+
 #calcadoInput {
   background-color: #23242e;
   border: none;
@@ -68,8 +75,9 @@ header {
 }
 
 #gravarBtn {
+  font-family: "Arial";
   align-self: center;
-  background-color: #50fa7b;
+  background-color: #21b821;
   margin: 20px;
   width: 20%;
   height: 60px;
@@ -82,8 +90,9 @@ header {
 }
 
 #pararBtn {
+  font-family: "Arial";
   align-self: center;
-  background-color: #50fa7b;
+  background-color: #ffa500;
   margin: 20px;
   width: 20%;
   height: 60px;
@@ -95,6 +104,7 @@ header {
 }
 
 #conectarBtn {
+  font-family: "Arial";
   align-self: center;
   background-color: #00bfff;
   margin: 20px;
@@ -111,13 +121,20 @@ header {
   background-color: #282a36;
   margin: 20px;
   padding: 20px;
-  height: 200px;
+  justify-content: center;
+  height: 400px;
   font-size: 15pt;
   font-weight: bold;
   border-radius: 25px;
 }
+#terminal p {
+  text-align: center;
+  font-family: "Arial";
+}
 
 #results {
+  justify-content: center;
+  align-items: center;
   margin-left: 20px;
   font-size: 25pt;
   display: flex;
@@ -140,13 +157,13 @@ header {
   border: none;
   outline: none;
   text-align: center;
-  color: #f00;
+  color: rgb(245, 31, 31);
   height: 40px;
   width: 150px;
 }
 
-p#textResultTemp {
-  margin-top: 5px;
+#textResultTemp p {
+  margin-top: 0px;
   padding: 0;
 }
 
@@ -156,7 +173,7 @@ p#textResultTemp {
   border: none;
   outline: none;
   text-align: center;
-  color: #00f;
+  color: #00bfff;
   height: 40px;
   width: 150px;
 }
