@@ -4,7 +4,8 @@
   "description": "Temperature and humidity measurement of a Bluetooth Arduino device.",
   "main": "./src/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "install": "electron-rebuild"
   },
   "repository": {
     "type": "git",
@@ -14,7 +15,8 @@
     "temperature",
     "humidity",
     "measurement",
-    "bluetooth"
+    "bluetooth",
+    "Arduino"
   ],
   "author": "ArthurBotcher",
   "license": "MIT",
@@ -23,9 +25,11 @@
   },
   "homepage": "https://github.com/ArthurBottcher/THM#readme",
   "devDependencies": {
-    "electron": "^6.0.7"
+    "electron": "^6.0.7",
+    "electron-rebuild": "^1.8.6"
   },
   "dependencies": {
+    "serialport": "^7.1.5",
     "url": "^0.11.0"
   }
 }

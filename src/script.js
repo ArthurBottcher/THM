@@ -1,17 +1,25 @@
 function start() {
+  dataAtual();
+  TempUmid();
+  var sp = require("serialport");
+
+  sp.list(function(err, ports) {
+    console.log(ports);
+  });
+}
+
+function dataAtual() {
   //coleta a hora atual automaticamente
   atual = new Date();
   dia = atual.getDate();
   mes = atual.getMonth();
   ano = atual.getFullYear();
-  var str_data = dia + "/" + (mes + 1) + "/" + ano;
-  let data = document.getElementById("dataInput");
-  data.innerHTML = str_data;
-
-  calculo();
+  var str_date = dia + "/" + (mes + 1) + "/" + ano;
+  let date = document.getElementById("dataInput");
+  date.innerHTML = str_date;
 }
 
-function calculo() {
+function TempUmid() {
   //variaveis da temperatura
   let tempInicial = document.getElementById("textResultTempIni");
   let tempFinal = document.getElementById("textResultTempFin");

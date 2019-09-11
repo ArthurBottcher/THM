@@ -38,6 +38,7 @@ header {
   margin: 5px;
   color: #fff;
 }
+
 #dataInput {
   background-color: #23242e;
   border: none;
@@ -87,6 +88,7 @@ header {
   text-align: center;
   font-size: 25pt;
   font-weight: bold;
+  box-shadow: 5px 5px 5px black;
 }
 
 #pararBtn {
@@ -101,6 +103,7 @@ header {
   border-radius: 50px;
   font-size: 25pt;
   font-weight: bold;
+  box-shadow: 5px 5px 5px black;
 }
 
 #conectarBtn {
@@ -115,17 +118,18 @@ header {
   border-radius: 50px;
   font-size: 25pt;
   font-weight: bold;
+  box-shadow: 5px 5px 5px black;
 }
 
 #terminal {
   background-color: #282a36;
   margin: 20px;
   padding: 20px;
-  justify-content: center;
   height: 400px;
   font-size: 15pt;
   font-weight: bold;
   border-radius: 25px;
+  box-shadow: 5px 5px 5px black;
 }
 #terminal p {
   text-align: center;
@@ -135,11 +139,9 @@ header {
 #results {
   justify-content: center;
   align-items: center;
-  margin-left: 20px;
   font-size: 25pt;
   display: flex;
   flex-direction: row;
-  align-items: center;
   padding: 45px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -147,6 +149,10 @@ header {
 }
 
 #textIndices {
+  font-family: "Arial";
+  font-weight: bold;
+  font-size: 24pt;
+  text-align: center;
   color: #fff;
   margin-bottom: 0px;
 }
@@ -154,32 +160,19 @@ header {
 #textResultTempIni,
 #textResultTempFin,
 #textResultTempDelta {
-  border: none;
-  outline: none;
+  width: 100%;
+  height: 40px;
   text-align: center;
   color: rgb(245, 31, 31);
-  height: 40px;
-  width: 150px;
-}
-
-#textResultTemp p {
-  margin-top: 0px;
-  padding: 0;
 }
 
 #textResultUmidIni,
 #textResultUmidFin,
 #textResultUmidDelta {
-  border: none;
-  outline: none;
   text-align: center;
   color: #00bfff;
   height: 40px;
-  width: 150px;
-}
-p#textResultUmid {
-  margin-top: 5px;
-  padding: 0;
+  width: 100%;
 }
 
 #TempIni {
@@ -189,30 +182,40 @@ p#textResultUmid {
 }
 
 #UmidIni {
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 33%;
   padding: 0;
 }
 
 #TempFin {
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 33%;
   padding: 0;
 }
 
 #UmidFin {
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 33%;
   padding: 0;
 }
 
 #DifTemp {
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 33%;
   padding: 0;
 }
 
 #DifUmid {
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 33%;
   padding: 0;
