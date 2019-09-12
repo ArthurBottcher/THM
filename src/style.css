@@ -1,24 +1,27 @@
 * {
   font-family: "Arial Black";
+  font-weight: bold;
+  color: #fff;
 }
 
 #container {
-  margin: 0px;
   flex: 1;
+  width: 100%;
+  height: 100%;
   background-color: #23242e;
-  color: #fff;
-  justify-content: center;
 }
+
 header {
-  height: 80px;
-  margin: 0px;
+  height: 120px;
   padding-top: 25px;
-  font-size: 30pt;
-  font-family: "Arial Black";
-  font-weight: bold;
-  text-align: center;
-  line-height: 40px;
-  color: #e6e6e6;
+}
+
+img#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  height: 130px;
 }
 
 #topo {
@@ -36,7 +39,6 @@ header {
   width: 50%;
   font-size: 30pt;
   margin: 5px;
-  color: #fff;
 }
 
 #dataInput {
@@ -48,7 +50,6 @@ header {
   width: 50%;
   font-size: 30pt;
   margin: 5px;
-  color: #fff;
 }
 
 #dataInput p {
@@ -65,7 +66,6 @@ header {
   width: 50%;
   font-size: 30pt;
   margin: 5px;
-  color: #fff;
 }
 
 #buttons {
@@ -77,47 +77,49 @@ header {
 
 #gravarBtn {
   font-family: "Arial";
+  font-size: 25pt;
   align-self: center;
+  text-align: center;
   background-color: #21b821;
+  color: #000;
   margin: 20px;
   width: 20%;
   height: 60px;
-  border: none;
   outline: none;
+  border: none;
   border-radius: 50px;
-  text-align: center;
-  font-size: 25pt;
-  font-weight: bold;
   box-shadow: 5px 5px 5px black;
 }
 
 #pararBtn {
   font-family: "Arial";
+  font-size: 25pt;
   align-self: center;
+  text-align: center;
   background-color: #ffa500;
+  color: #000;
   margin: 20px;
   width: 20%;
   height: 60px;
   border: none;
-  outline: none;
   border-radius: 50px;
-  font-size: 25pt;
-  font-weight: bold;
+  outline: none;
   box-shadow: 5px 5px 5px black;
 }
 
 #conectarBtn {
   font-family: "Arial";
+  font-size: 25pt;
   align-self: center;
+  text-align: center;
   background-color: #00bfff;
+  color: #000;
   margin: 20px;
   width: 20%;
   height: 60px;
   border: none;
-  outline: none;
   border-radius: 50px;
-  font-size: 25pt;
-  font-weight: bold;
+  outline: none;
   box-shadow: 5px 5px 5px black;
 }
 
@@ -127,21 +129,21 @@ header {
   padding: 20px;
   height: 400px;
   font-size: 15pt;
-  font-weight: bold;
   border-radius: 25px;
   box-shadow: 5px 5px 5px black;
 }
+
 #terminal p {
   text-align: center;
   font-family: "Arial";
 }
 
 #results {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   font-size: 25pt;
-  display: flex;
-  flex-direction: row;
   padding: 45px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -150,10 +152,8 @@ header {
 
 #textIndices {
   font-family: "Arial";
-  font-weight: bold;
   font-size: 24pt;
   text-align: center;
-  color: #fff;
   margin-bottom: 0px;
 }
 
@@ -169,10 +169,10 @@ header {
 #textResultUmidIni,
 #textResultUmidFin,
 #textResultUmidDelta {
-  text-align: center;
-  color: #00bfff;
   height: 40px;
   width: 100%;
+  text-align: center;
+  color: #00bfff;
 }
 
 #TempIni {
@@ -182,40 +182,30 @@ header {
 }
 
 #UmidIni {
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   width: 33%;
   padding: 0;
 }
 
 #TempFin {
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   width: 33%;
   padding: 0;
 }
 
 #UmidFin {
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   width: 33%;
   padding: 0;
 }
 
 #DifTemp {
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   width: 33%;
   padding: 0;
 }
 
 #DifUmid {
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   width: 33%;
   padding: 0;

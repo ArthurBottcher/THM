@@ -5,13 +5,17 @@ function createWindow() {
   let win = new BrowserWindow({
     width: 1200,
     height: 800,
+    autoHideMenuBar: true,
     backgroundColor: "#23242e",
+    show: false,
     webPreferences: {
       nodeIntegration: true
     }
   });
+  win.once("ready-to-show", () => {
+    win.show();
+  });
   //win.webContents.openDevTools();
-  win.setMenuBarVisibility(false);
   // e carregar o index.html do aplicativo.
   win.loadFile("./src/index.html");
 }
