@@ -80,7 +80,7 @@ img#logo {
   font-size: 25pt;
   align-self: center;
   text-align: center;
-  background-color: #21b821;
+  background-color: #10f510;
   color: #000;
   margin: 20px;
   width: 20%;
@@ -90,13 +90,17 @@ img#logo {
   border-radius: 50px;
   box-shadow: 5px 5px 5px black;
 }
+#gravarBtn:hover {
+  width: 22%;
+  background-color: #47e647;
+}
 
 #pararBtn {
   font-family: "Arial";
   font-size: 25pt;
   align-self: center;
   text-align: center;
-  background-color: #ffa500;
+  background-color: #ffa600;
   color: #000;
   margin: 20px;
   width: 20%;
@@ -105,6 +109,11 @@ img#logo {
   border-radius: 50px;
   outline: none;
   box-shadow: 5px 5px 5px black;
+}
+
+#pararBtn:hover {
+  width: 22%;
+  background-color: #f8b63b;
 }
 
 #conectarBtn {
@@ -123,19 +132,47 @@ img#logo {
   box-shadow: 5px 5px 5px black;
 }
 
+#conectarBtn:hover {
+  width: 22%;
+  background-color: #58d5ff;
+}
+
 #terminal {
   background-color: #282a36;
   margin: 20px;
-  padding: 20px;
-  height: 400px;
+  min-height: 150px;
+  max-height: 400px;
   font-size: 15pt;
   border-radius: 25px;
   box-shadow: 5px 5px 5px black;
+  overflow: auto;
 }
 
-#terminal p {
+#terminal::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #282a36;
+}
+#terminal::-webkit-scrollbar {
+  width: 12px;
+  background-color: #282a36;
+}
+#terminal::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #23242e;
+}
+
+#txtTerminal {
   text-align: center;
   font-family: "Arial";
+  color: #0f0;
+  word-spacing: 14px;
+  padding-bottom: 3px;
+}
+#headerTerminal {
+  margin-top: 2px;
+  margin-left: 15px;
 }
 
 #results {
@@ -144,9 +181,6 @@ img#logo {
   justify-content: center;
   align-items: center;
   font-size: 25pt;
-  padding: 45px;
-  margin-top: 30px;
-  margin-bottom: 30px;
   height: 15%;
 }
 
@@ -178,35 +212,29 @@ img#logo {
 #TempIni {
   flex-direction: column;
   width: 33%;
-  padding: 0;
 }
 
 #UmidIni {
   flex-direction: column;
   width: 33%;
-  padding: 0;
 }
 
 #TempFin {
   flex-direction: column;
   width: 33%;
-  padding: 0;
 }
 
 #UmidFin {
   flex-direction: column;
   width: 33%;
-  padding: 0;
 }
 
 #DifTemp {
   flex-direction: column;
   width: 33%;
-  padding: 0;
 }
 
 #DifUmid {
   flex-direction: column;
   width: 33%;
-  padding: 0;
 }

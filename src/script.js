@@ -1,11 +1,6 @@
 function start() {
   dataAtual();
   TempUmid();
-  var sp = require("serialport");
-
-  sp.list(function(err, ports) {
-    console.log(ports);
-  });
 }
 
 function dataAtual() {

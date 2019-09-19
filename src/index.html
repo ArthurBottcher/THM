@@ -19,7 +19,7 @@
 
       <div id="buttons">
         <button id="conectarBtn">Conectar</button>
-        <button id="gravarBtn">Gravar</button>
+        <button id="gravarBtn" onclick="readserial()">Gravar</button>
         <button id="pararBtn">Parar</button>
       </div>
 
@@ -58,9 +58,11 @@
       </div>
 
       <div id="terminal">
-        <p id="txtTerminal">Terminal serial</p>
+        <p id="headerTerminal">Terminal serial<br /><br /></p>
+        <p id="txtTerminal"></p>
       </div>
     </div>
     <script src="script.js"></script>
+    <script src="bleserial.js"></script>
   </body>
 </html>
