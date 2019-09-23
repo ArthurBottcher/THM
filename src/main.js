@@ -15,7 +15,7 @@ function createWindow() {
   win.once("ready-to-show", () => {
     win.show();
   });
-  //win.webContents.openDevTools();
+  win.webContents.openDevTools();
   // e carregar o index.html do aplicativo.
   win.loadFile("./src/index.html");
 }
