@@ -5,7 +5,10 @@
   "main": "./src/main.js",
   "scripts": {
     "start": "electron .",
-    "install": "electron-rebuild"
+    "install": "electron-rebuild",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "win64": "electron-packager . THM --platform=win32 --arch=x64  --icon=/icon.ico --overwrite"
   },
   "repository": {
     "type": "git",
@@ -26,11 +29,19 @@
   "homepage": "https://github.com/ArthurBottcher/THM#readme",
   "devDependencies": {
     "electron": "^6.0.7",
+    "electron-builder": "^21.2.0",
+    "electron-packager": "^14.0.6",
     "electron-rebuild": "^1.8.6"
   },
   "dependencies": {
     "fs": "0.0.1-security",
     "serialport": "^7.1.5",
     "url": "^0.11.0"
+  },
+  "build": {
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
+    }
   }
 }

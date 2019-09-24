@@ -1,10 +1,8 @@
 var fs = require('fs');
-let nomeModelo = document.getElementById("modeloInput").value;
-let nomeCalçado = document.getElementById("calcadoInput").value;
-let nomeArquivo = `Arthur_teste`
-console.log(nomeArquivo);
 
-var writeStream = fs.createWriteStream(`${nomeArquivo}.csv`);
+
+
+
 
 var SerialPort = require("serialport");
 var port = new SerialPort("COM11", { baudRate: 9600 });
@@ -49,6 +47,10 @@ function gravar() {
 
 function stop() {
   port.close(function (err) {
+    let nomeModelo = String(document.getElementById("modeloInput").value);
+    let nomeCalçado = String(document.getElementById("calcadoInput").value);
+    let nomeArquivo = `${nomeModelo}_${nomeCalçado}`;
+    var writeStream = fs.createWriteStream(`../resultados/${nomeArquivo}.csv`);
     console.log("port closed", err);
     tempFinal.innerHTML = dadosTemp[dadosTemp.length - 1];
     tf = dadosTemp[dadosTemp.length - 1];
@@ -60,10 +62,10 @@ function stop() {
     tempDelta.innerHTML = dt.toFixed(1);
     umidDelta.innerHTML = du.toFixed(1);
 
-    let header = "Sample Number (1 samples per second),temperatura (ºC),umidade (%)"
+    let header = "Sample Number (1 samples per second),temperatura (ºC),umidade (%)" + "\n"
     writeStream.write(header);
     for (let i = 0; i < dadosTemp.length; i++) {
-      let row = i + "\t" + dadosTemp[i] + "\t" + dadosUmid[i] + "\n";
+      let row = i + "," + dadosTemp[i] + "," + dadosUmid[i] + "\n";
       writeStream.write(row);
     }
     writeStream.close()

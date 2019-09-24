@@ -6,6 +6,7 @@ function createWindow() {
     width: 1440,
     height: 1024,
     autoHideMenuBar: true,
+    icon: __dirname + "/icon.png",
     backgroundColor: "#23242e",
     show: false,
     webPreferences: {
@@ -15,7 +16,7 @@ function createWindow() {
   win.once("ready-to-show", () => {
     win.show();
   });
-  win.webContents.openDevTools();
+  //win.webContents.openDevTools();
   // e carregar o index.html do aplicativo.
   win.loadFile("./src/index.html");
 }
