@@ -1,9 +1,3 @@
-var fs = require('fs');
-
-
-
-
-
 var SerialPort = require("serialport");
 var port = new SerialPort("COM11", { baudRate: 9600 });
 var Readline = SerialPort.parsers.Readline; // make instance of Readline parser
@@ -43,6 +37,11 @@ function gravar() {
   ti = dadosTemp[dadosTemp.length - 1];
   umidInicial.innerHTML = dadosUmid[dadosUmid.length - 1];
   ui = dadosUmid[dadosUmid.length - 1];
+
+  agora = new Date();
+  var hora = agora.getHours()
+  var min = agora.getMinutes();
+  console.log(hora, min);
 }
 
 function stop() {

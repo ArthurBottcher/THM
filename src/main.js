@@ -6,7 +6,7 @@ function createWindow() {
     width: 1440,
     height: 1024,
     autoHideMenuBar: true,
-    icon: __dirname + "/icon.png",
+    icon: `${__dirname}/icon.png`,
     backgroundColor: "#23242e",
     show: false,
     webPreferences: {
