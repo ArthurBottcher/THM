@@ -1,3 +1,4 @@
+var fs = require("fs");
 var SerialPort = require("serialport");
 var port = new SerialPort("COM11", { baudRate: 9600 });
 var Readline = SerialPort.parsers.Readline; // make instance of Readline parser
@@ -25,11 +26,17 @@ function readserial() {
   parser.on("data", function (data) {
     let temp = data.slice(0, 4);
     let umid = data.slice(6, 10);
-    console.log("Data:", temp, "AAA", umid);
     dadosTemp.push(temp);
     dadosUmid.push(umid);
     txtTerminal.innerHTML += `${data}<br>`;
   });
+}
+
+function addZero(i) { // adiiona o zero em algarismos menores que zero
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
 }
 
 function gravar() {
@@ -39,25 +46,29 @@ function gravar() {
   ui = dadosUmid[dadosUmid.length - 1];
 
   agora = new Date();
-  var hora = agora.getHours()
-  var min = agora.getMinutes();
-  console.log(hora, min);
+  min = addZero(agora.getMinutes());
+  hrs = addZero(agora.getHours());
+  const fullhours = hrs + ':' + min;
+  let hora = document.getElementById("horaInput");
+  hora.innerHTML = fullhours;
 }
 
 function stop() {
+
   port.close(function (err) {
     let nomeModelo = String(document.getElementById("modeloInput").value);
     let nomeCalçado = String(document.getElementById("calcadoInput").value);
-    let nomeArquivo = `${nomeModelo}_${nomeCalçado}`;
+    let data = String(document.getElementById('dataInput'));
+    let nomeArquivo = `${nomeModelo}_${nomeCalçado}_${data}`;
     var writeStream = fs.createWriteStream(`../resultados/${nomeArquivo}.csv`);
-    console.log("port closed", err);
+
     tempFinal.innerHTML = dadosTemp[dadosTemp.length - 1];
     tf = dadosTemp[dadosTemp.length - 1];
     umidFinal.innerHTML = dadosUmid[dadosUmid.length - 1];
     uf = dadosUmid[dadosUmid.length - 1];
     let dt = tf - ti;
     let du = uf - ui;
-    console.log(dt, "ttt", du);
+
     tempDelta.innerHTML = dt.toFixed(1);
     umidDelta.innerHTML = du.toFixed(1);
 

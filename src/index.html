@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>THM Temperature and Humidity Measurement</title>
-    <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8" />
-  </head>
 
-  <body onload="start()">
-    <div id="container">
-      <header>
-        <img src="../assets/logotipo_ibtec.png" alt="logotipo" id="logo" />
-      </header>
-      <div id="topo">
-        <input id="modeloInput" type="text" placeholder="Modelo" />
-        <input id="calcadoInput" type="text" placeholder="Calçado" />
-        <p id="dataInput"></p>
+<head>
+  <title>THM Temperature and Humidity Measurement</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+</head>
+
+<body onload="start()">
+  <div class="container">
+
+
+    <div class="form">
+      <img src="../assets/logotipo_ibtec.png" alt="logotipo" id="logo" />
+
+      <div class="label">
+        <p class="txt">Modelo</p>
+        <input type="text" name="" id="modeloInput" class="inputs">
       </div>
 
-      <div id="buttons">
-        <button id="conectarBtn" onclick="readserial()">Conectar</button>
-        <button id="gravarBtn" onclick="gravar()">Gravar</button>
-        <button id="pararBtn" onclick="stop()">Parar</button>
+      <div class="label">
+        <p class="txt">Calçado</p>
+        <input type="text" name="" id="calcadoInput" class="inputs">
       </div>
 
-      <div id="results">
-        <div id="TempIni">
-          <p id="textIndices">Temp. Inicial</p>
-          <p id="textResultTempIni"></p>
-        </div>
-
-        <div id="TempFin">
-          <p id="textIndices">Temp. Final</p>
-          <p id="textResultTempFin"></p>
-        </div>
-
-        <div id="DifTemp">
-          <p id="textIndices">Delta Temp.</p>
-          <p id="textResultTempDelta"></p>
-        </div>
+      <div class="label">
+        <p class="txt">Data</p>
+        <p id="dataInput" class="txt"></p>
       </div>
 
-      <div id="results">
-        <div id="UmidIni">
-          <p id="textIndices">Umid. Inicial</p>
-          <p id="textResultUmidIni"></p>
-        </div>
-
-        <div id="UmidFin">
-          <p id="textIndices">Umid. Final</p>
-          <p id="textResultUmidFin"></p>
-        </div>
-
-        <div id="DifUmid">
-          <p id="textIndices">Delta Umid.</p>
-          <p id="textResultUmidDelta"></p>
-        </div>
+      <div class="label">
+        <p class="txt">Hora de Inicio</p>
+        <p id="horaInput" class="txt"></p>
       </div>
 
-      <div id="terminal">
-        <p id="headerTerminal">Terminal serial<br /><br /></p>
-        <p id="txtTerminal"></p>
+      <div class="buttons">
+        <button class="btnC" onclick="readserial()">Conectar</button>
+        <button class="btnG" onclick="gravar()">Gravar</button>
+        <button class="btnP" onclick="stop()">Parar</button>
       </div>
+
     </div>
-    <script src="script.js"></script>
-    <script src="bleserial.js"></script>
-  </body>
+
+    <div class="reta1"></div>
+
+    <div class="rigthView">
+
+      <div class="content">
+        <p class="topic">Temperatura</p>
+        <div class="indices">
+          <p class="inicial">Inicial</p>
+          <p class="final">Final</p>
+          <p class="delta">Delta</p>
+        </div>
+        <div class="resultados">
+          <p class="inicial" id="textResultTempIni"></p>
+          <p class="final" id="textResultTempFin"></p>
+          <p class="delta" id="textResultTempDelta"></p>
+        </div>
+      </div>
+
+      <div class="content">
+        <p class="topic">Umidade</p>
+        <div class="indices">
+          <p class="inicial">Inicial</p>
+          <p class="final">Final</p>
+          <p class="delta">Delta</p>
+        </div>
+        <div class="resultados">
+          <p class="inicial" id="textResultUmidIni"></p>
+          <p class="final" id="textResultUmidFin"></p>
+          <p class="delta" id="textResultUmidDelta"></p>
+        </div>
+      </div>
+      <div class="reta2"></div>
+      <div class="terminal" id="terminal">
+        <p class="txtterminal" id="txtTerminal"></p>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+  <script src="script.js"></script>
+  <script src="bleserial.js"></script>
+</body>
+
 </html>
