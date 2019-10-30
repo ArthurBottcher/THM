@@ -1,3 +1,5 @@
+
+
 function start() {
   dataAtual();
 }
@@ -8,7 +10,9 @@ function dataAtual() {
   dia = atual.getDate();
   mes = atual.getMonth();
   ano = atual.getFullYear();
-  var str_date = dia + "/" + (mes + 1) + "/" + ano;
+  var str_date = dia + " -" + (mes + 1) + " -" + ano;
   let date = document.getElementById("dataInput");
   date.innerHTML = str_date;
+
 }
+

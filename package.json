@@ -34,7 +34,8 @@
     "electron-rebuild": "^1.8.6"
   },
   "dependencies": {
-    "fs": "0.0.1-security",
+    "electron-store": "^5.0.0",
+    "fs": "^0.0.1-security",
     "serialport": "^7.1.5",
     "url": "^0.11.0"
   },

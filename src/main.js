@@ -1,13 +1,13 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, } = require("electron");
 
 function createWindow() {
   // Cria uma janela de navegação.
   let win = new BrowserWindow({
     width: 1440,
     height: 1024,
+    icon: __dirname + "./icon.png",
     autoHideMenuBar: true,
-    icon: `${__dirname}/icon.png`,
-    backgroundColor: "#23242e",
+    backgroundColor: "#243447",
     show: false,
     webPreferences: {
       nodeIntegration: true
@@ -15,6 +15,7 @@ function createWindow() {
   });
   win.once("ready-to-show", () => {
     win.show();
+    win.maximize();
   });
   //win.webContents.openDevTools();
   // e carregar o index.html do aplicativo.
