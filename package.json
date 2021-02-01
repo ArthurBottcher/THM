@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/ArthurBottcher/THM#readme",
   "devDependencies": {
-    "electron": "^6.0.7",
+    "electron": "^9.4.0",
     "electron-builder": "^21.2.0",
     "electron-packager": "^14.0.6",
     "electron-rebuild": "^1.8.6"
